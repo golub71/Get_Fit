@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bignerdranch.android.getfit.NewCustomer"
+    android:background="#a8c4ee">
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.bignerdranch.android.getfit.NewCustomer"
+        android:id="@+id/userID_fragment"
+        android:text="@string/username"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="New Customer"
+        android:id="@+id/textView_newCustomer"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2b70de"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name:"
+        android:ems="10"
+        android:id="@+id/editText_customerName"
+        android:layout_below="@+id/textView_newCustomer"
+        android:layout_centerHorizontal="true"
+        android:background="#cbc9c9"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText_customerAddress"
+        android:text="Address:"
+        android:layout_below="@+id/editText_customerName"
+        android:layout_alignLeft="@+id/editText_customerName"
+        android:layout_alignStart="@+id/editText_customerName"
+        android:background="#cbc9c9"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText_customerCity"
+        android:layout_below="@+id/editText_customerAddress"
+        android:layout_alignRight="@+id/editText_customerAddress"
+        android:layout_alignEnd="@+id/editText_customerAddress"
+        android:text="City:"
+        android:layout_marginBottom="25dp"
+        android:background="#cbc9c9"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText_customerState"
+        android:layout_below="@+id/editText_customerCity"
+        android:layout_alignRight="@+id/editText_customerCity"
+        android:layout_alignEnd="@+id/editText_customerCity"
+        android:text="State:"
+        android:background="#cbc9c9"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText_customerZip"
+        android:layout_below="@+id/editText_customerState"
+        android:layout_alignLeft="@+id/editText_customerState"
+        android:layout_alignStart="@+id/editText_customerState"
+        android:text="Zip Code:"
+        android:layout_marginBottom="25dp"
+        android:background="#cbc9c9"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText_customerPhone"
+        android:layout_below="@+id/editText_customerZip"
+        android:layout_alignRight="@+id/editText_customerZip"
+        android:layout_alignEnd="@+id/editText_customerZip"
+        android:text="Phone #:"
+        android:background="#cbc9c9"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText_customerEmail"
+        android:layout_below="@+id/editText_customerPhone"
+        android:layout_alignRight="@+id/editText_customerPhone"
+        android:layout_alignEnd="@+id/editText_customerPhone"
+        android:text="Email:"
+        android:background="#cbc9c9"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:id="@+id/button_createAccount"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:background="#2b70de"
+        android:textColor="#a8c4ee"/>
+</RelativeLayout>

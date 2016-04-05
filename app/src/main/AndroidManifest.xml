@@ -19,15 +19,23 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".User"
+        <activity
+            android:name=".User"
             android:label="@string/title_activity_user">
             <intent-filter>
-                <action android:name="com.bignerdranch.android.getfit.User" />
+                <action android:name="com.bignerdranch.android.getfit.User"/>
 
-                <category android:name="android.intent.category.default" />
+                <category android:name="android.intent.category.default"/>
             </intent-filter>
         </activity>
-
+        <activity android:name=".NewCustomer">
+        </activity>
+        <activity android:name=".TakePhoto">
+        </activity>
+        <activity android:name=".CustomerSessions">
+        </activity>
+        <activity android:name=".CustomerBilling">
+        </activity>
     </application>
 
 </manifest>

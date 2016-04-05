@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bignerdranch.android.getfit.CustomerBilling"
+    android:background="#a8c4ee">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Customer Billing"
+        android:id="@+id/textView_billing"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2b70de"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Customer Name"
+        android:ems="10"
+        android:id="@+id/editText_billingName"
+        android:layout_below="@+id/textView_billing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:textColor="#2b70de"
+        android:background="#cbc9c9"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText_billingAddress"
+        android:layout_below="@+id/editText_billingName"
+        android:layout_alignLeft="@+id/editText_billingName"
+        android:layout_alignStart="@+id/editText_billingName"
+        android:textColor="#2b70de"
+        android:text="Address"
+        android:background="#cbc9c9"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText_billingCity"
+        android:layout_below="@+id/editText_billingAddress"
+        android:layout_centerHorizontal="true"
+        android:text="City"
+        android:textColor="#2b70de"
+        android:background="#cbc9c9"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText_billingState"
+        android:layout_below="@+id/editText_billingCity"
+        android:layout_alignLeft="@+id/editText_billingCity"
+        android:layout_alignStart="@+id/editText_billingCity"
+        android:textColor="#2b70de"
+        android:text="State"
+        android:background="#cbc9c9"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText_billingZip"
+        android:layout_below="@+id/editText_billingState"
+        android:layout_centerHorizontal="true"
+        android:text="Zip Code"
+        android:textColor="#2b70de"
+        android:background="#cbc9c9"
+        android:layout_marginBottom="-10dp"/>
+
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText_expDate"
+        android:layout_marginTop="48dp"
+        android:textColor="#2b70de"
+        android:text="Exp. Date"
+        android:layout_below="@+id/editText_billingZip"
+        android:layout_alignLeft="@+id/editText_billingZip"
+        android:layout_alignStart="@+id/editText_billingZip"
+        android:background="#cbc9c9"/>
+
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText_csv"
+        android:layout_alignTop="@+id/editText_expDate"
+        android:layout_alignRight="@+id/editText_billingZip"
+        android:layout_alignEnd="@+id/editText_billingZip"
+        android:textColor="#2b70de"
+        android:text="CSV"
+        android:background="#cbc9c9"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button_submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText_expDate"
+        android:layout_alignEnd="@+id/editText_expDate"
+        android:background="#2b70de"
+        android:textColor="#a8c4ee"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print/Share"
+        android:id="@+id/button_printShare"
+        android:layout_alignTop="@+id/button_submit"
+        android:layout_alignLeft="@+id/editText_csv"
+        android:layout_alignStart="@+id/editText_csv"
+        android:background="#2b70de"
+        android:textColor="#a8c4ee"/>
+</RelativeLayout>

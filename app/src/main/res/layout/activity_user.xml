@@ -8,15 +8,117 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.bignerdranch.android.getfit.User">
+    tools:context="com.bignerdranch.android.getfit.User"
+    android:background="#a8c4ee">
 
-    <EditText
+    <fragment
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:text="Welcome to the second page!"
-        android:textSize="25dp"
+        android:name="com.bignerdranch.android.getfit.User"
+        android:id="@+id/userID_fragment"
+        android:text="@string/username"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:text="Create New Customer"
+        android:id="@+id/button_newCustomer"
+        android:background="#2b70de"
+        android:textColor="#a8c4ee"
         android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:text="Customer Accounts"
+        android:id="@+id/button_customerAccount"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button_newCustomer"
+        android:layout_toEndOf="@+id/button_newCustomer"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:background="#2b70de"
+        android:textColor="#a8c4ee"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:text="Take a Photo"
+        android:id="@+id/button_photo"
+        android:background="#2b70de"
+        android:textColor="#a8c4ee"
+        android:layout_below="@+id/button_newCustomer"
+        android:layout_alignLeft="@+id/button_newCustomer"
+        android:layout_alignStart="@+id/button_newCustomer"
+        android:layout_marginTop="45dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:text="Customer Sessions"
+        android:id="@+id/button_sessions"
+        android:layout_alignTop="@+id/button_photo"
+        android:layout_alignLeft="@+id/button_customerAccount"
+        android:layout_alignStart="@+id/button_customerAccount"
+        android:textColor="#a8c4ee"
+        android:background="#2b70de"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:text="Mark Session Completed"
+        android:id="@+id/button_sessionCompleted"
+        android:layout_marginTop="51dp"
+        android:background="#2b70de"
+        android:textColor="#a8c4ee"
+        android:layout_below="@+id/button_photo"
+        android:layout_alignLeft="@+id/button_photo"
+        android:layout_alignStart="@+id/button_photo"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:text="New Custmer Session"
+        android:id="@+id/button_newSession"
+        android:layout_alignTop="@+id/button_sessionCompleted"
+        android:layout_alignLeft="@+id/button_sessions"
+        android:layout_alignStart="@+id/button_sessions"
+        android:textColor="#a8c4ee"
+        android:background="#2b70de"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Payment"
+        android:id="@+id/button_submitPayment"
+        android:layout_below="@+id/button_sessionCompleted"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="158dp"/>
+        android:layout_marginTop="35dp"
+        android:background="#2b70de"
+        android:textColor="#a8c4ee"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:id="@+id/button_logout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#2b70de"
+        android:textColor="#a8c4ee"/>
+
+    <Gallery
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gallery"
+        android:layout_below="@+id/button_logout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="107dp"
+        android:layout_marginStart="107dp"/>
 </RelativeLayout>
